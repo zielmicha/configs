@@ -155,6 +155,8 @@ bar {
 
 exec --no-startup-id xsetroot -solid "#333333"
 exec --no-startup-id nm-applet
+exec --no-startup-id gnome-power-manager
+exec --no-startup-id xrandr --output VGA1 --primary --auto --right-of HDMI1 --output HDMI1 --auto
 
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5%
 bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -- -5%
