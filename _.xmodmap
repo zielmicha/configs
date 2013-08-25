@@ -1,0 +1,3 @@
+keycode 66 = Control_L Control_L Control_L Control_L Control_L Control_L Control_L Control_L
+clear lock
+add Control = Control_L
