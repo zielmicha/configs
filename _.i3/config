@@ -88,6 +88,26 @@ bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
 
+bindsym KP_1 workspace 1
+bindsym KP_2 workspace 2
+bindsym KP_3 workspace 3
+bindsym KP_4 workspace 4
+bindsym KP_5 workspace 5
+bindsym KP_6 workspace 6
+bindsym KP_7 workspace 7
+bindsym KP_8 workspace 8
+bindsym KP_9 workspace 9
+
+bindsym Shift+KP_End move workspace 1
+bindsym Shift+KP_Down move workspace 2
+bindsym Shift+KP_Next move workspace 3
+bindsym Shift+KP_Left move workspace 4
+bindsym Shift+KP_Begin move workspace 5
+bindsym Shift+KP_Right move workspace 6
+bindsym Shift+KP_Home move workspace 7
+bindsym Shift+KP_Up move workspace 8
+bindsym Shift+KP_Prior move workspace 9
+
 # move focused container to workspace
 bindsym $mod+Shift+exclam move workspace 1
 bindsym $mod+Shift+at move workspace 2
@@ -160,8 +180,9 @@ exec --no-startup-id xrandr --output VGA1 --primary --auto --right-of HDMI1 --ou
 
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5%
 bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -- -5%
+#bindsym Alt+Ctrl+L exec xdg-screensaver lock
 
-bindsym $mod+Shift+a move workspace to output right
-bindsym $mod+Shift+s move workspace to output left
+#bindsym $mod+Shift+a move workspace to output right
+#bindsym $mod+Shift+s move workspace to output left
 
 exec_always xmodmap ~/.xmodmap
