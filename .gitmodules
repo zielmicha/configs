@@ -1,6 +1,6 @@
 [submodule "ace-jump-mode"]
-	path = ace-jump-mode
+	path = _.emacs.d/ace-jump-mode
 	url = https://github.com/winterTTr/ace-jump-mode
 [submodule "nyan-mode"]
-	path = nyan-mode
+	path = _.emacs.d/nyan-mode
 	url = https://github.com/TeMPOraL/nyan-mode/
