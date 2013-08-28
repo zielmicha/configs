@@ -100,10 +100,10 @@
           (set-buffer-modified-p nil))))))
 
 
-(keyboard-translate ?( ?[)
-(keyboard-translate ?[ ?()
-(keyboard-translate ?) ?])
-(keyboard-translate ?] ?))
+(keyboard-translate ?( ?()
+(keyboard-translate ?[ ?[)
+(keyboard-translate ?) ?))
+(keyboard-translate ?] ?])
 
 
 ;(require 'pager)
