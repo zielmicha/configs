@@ -187,3 +187,5 @@ bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -- -5%
 #bindsym $mod+Shift+s move workspace to output left
 
 exec_always xmodmap ~/.xmodmap
+
+for_window [title="touchciv"] floating enable
