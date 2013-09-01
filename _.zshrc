@@ -116,3 +116,5 @@ alias vi=vim
 alias nano="emacs -nw -q -l ~/.emacs.d/nano.el"
 
 export LLVM=$HOME/clang/bin
+export SDL_VIDEO_FULLSCREEN_HEAD=0
+export SDL_VIDEO_X11_DGAMOUSE=0
