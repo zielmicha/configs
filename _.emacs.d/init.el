@@ -105,6 +105,8 @@
 (keyboard-translate ?) ?))
 (keyboard-translate ?] ?])
 
+(setq c-default-style "linux"
+          c-basic-offset 4)
 
 ;(require 'pager)
 ;(global-set-key [next]     'pager-page-down)
