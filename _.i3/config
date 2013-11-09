@@ -191,3 +191,9 @@ bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -- -5%
 exec_always xmodmap ~/.xmodmap
 
 for_window [title="touchciv"] floating enable
+for_window [title="touchciv"] move workspace 4
+
+assign [class="Gimp"] gimp
+bindsym $mod+g workspace gimp
+for_window [title="GIMP Startup"] move workspace gimp
+for_window [window_role="gimp-toolbox"] floating disable; layout stacking; move left; resize shrink right 31px or 31 ppt
