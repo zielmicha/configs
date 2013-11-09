@@ -4,3 +4,9 @@
 [submodule "nyan-mode"]
 	path = _.emacs.d/nyan-mode
 	url = https://github.com/TeMPOraL/nyan-mode/
+[submodule "_.emacs.d/ropemacs"]
+	path = _.emacs.d/ropemacs
+	url = https://github.com/zielmicha/ropemacs-mirror
+[submodule "_.emacs.d/pymacs"]
+	path = _.emacs.d/pymacs
+	url = https://github.com/pinard/Pymacs/

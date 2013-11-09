@@ -112,6 +112,21 @@
 ;(global-set-key [next]     'pager-page-down)
 ;(global-set-key [prior]    'pager-page-up)
 
+(add-to-list 'load-path "~/.emacs.d/pymacs")
+(add-to-list 'load-path "~/.emacs.d/ropemacs")
+
+(autoload 'pymacs-apply "pymacs")
+(autoload 'pymacs-call "pymacs")
+(autoload 'pymacs-eval "pymacs" nil t)
+(autoload 'pymacs-exec "pymacs" nil t)
+(autoload 'pymacs-load "pymacs" nil t)
+(autoload 'pymacs-autoload "pymacs")
+
+;(require 'pymacs)
+;(pymacs-load "ropemacs" "rope-")
+;(setq ropemacs-enable-autoimport t)
+;(setq ropemacs-enable-shortcuts nil)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
