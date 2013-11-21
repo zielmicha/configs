@@ -10,3 +10,6 @@
 [submodule "_.emacs.d/pymacs"]
 	path = _.emacs.d/pymacs
 	url = https://github.com/pinard/Pymacs/
+[submodule "_.emacs.d/paredit"]
+	path = _.emacs.d/paredit
+	url = http://mumble.net/~campbell/git/paredit.git/

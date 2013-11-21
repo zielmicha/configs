@@ -127,6 +127,9 @@
 ;(setq ropemacs-enable-autoimport t)
 ;(setq ropemacs-enable-shortcuts nil)
 
+(add-to-list 'load-path "~/.emacs.d/paredit")
+(require 'paredit)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
