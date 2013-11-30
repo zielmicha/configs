@@ -113,7 +113,7 @@
 ;(global-set-key [prior]    'pager-page-up)
 
 (add-to-list 'load-path "~/.emacs.d/pymacs")
-(add-to-list 'load-path "~/.emacs.d/ropemacs")
+;(add-to-list 'load-path "~/.emacs.d/ropemacs")
 
 (autoload 'pymacs-apply "pymacs")
 (autoload 'pymacs-call "pymacs")
@@ -129,6 +129,10 @@
 
 (add-to-list 'load-path "~/.emacs.d/paredit")
 (require 'paredit)
+(add-hook 'paredit-mode-hook (lambda ()
+                               (define-key paredit-mode-map (kbd "C-<left>") 'left-word)
+                               (define-key paredit-mode-map (kbd "C-<right>") 'right-word)
+                               (message "Whooo!")))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
