@@ -121,3 +121,5 @@ export SDL_VIDEO_FULLSCREEN_HEAD=0
 export SDL_VIDEO_X11_DGAMOUSE=0
 
 precmd () {print -Pn "\e]0;%n@%m: %~\a"}
+
+alias ncr='nimrod c -r --verbosity:0'
