@@ -83,7 +83,7 @@ alias ack="ack-grep"
 _mopen() {
 	for i in "$@"; do
 		echo "$i"
-		xdg-open "$i" &>/dev/null
+		xdg-open "$i" &>/dev/null &!
 	done
 }
 alias open=_mopen
