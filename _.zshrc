@@ -112,7 +112,7 @@ export LD_LIBRARY_PATH=/usr/local/lib
 
 [[ -e /etc/zsh_command_not_found ]] && source /etc/zsh_command_not_found
 
-export PATH="$PATH:$HOME/bin:/home/michal/apps/android-sdk-linux/tools:/home/michal/apps/android-sdk-linux/platform-tools:/home/michal/apps/android-ndk-r9:/usr/sbin:/sbin:/home/michal/oi/emscripten:/home/michal/oi/mxe/usr/bin/"
+export PATH="$PATH:$HOME/bin:/home/michal/apps/android-sdk-linux/tools:/home/michal/apps/android-sdk-linux/platform-tools:/home/michal/apps/android-ndk-r9:/usr/sbin:/sbin:/home/michal/oi/emscripten:/home/michal/oi/mxe/usr/bin/:$HOME/.babel/bin"
 alias vi=vim
 alias nano="emacs -nw -q -l ~/.emacs.d/nano.el"
 

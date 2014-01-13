@@ -191,6 +191,15 @@ bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -- -5%
 exec_always xmodmap ~/.xmodmap
 
 for_window [title="touchciv"] floating enable
+
+for_window [class="Plasma-desktop"] border none
+for_window [class="krunner"] border none
+for_window [class="Kmix"] floating enable;
+for_window [class="Plasmoidviewer"] floating enable;
+for_window [class="Klipper"] floating enable; border none
+
+exec gnome-settings-daemon
+
 for_window [title="touchciv"] move workspace 4
 
 assign [class="Gimp"] gimp
