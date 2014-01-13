@@ -19,3 +19,6 @@
 [submodule "_.emacs.d/auto-complete"]
 	path = _.emacs.d/auto-complete
 	url = http://cx4a.org/repo/auto-complete.git
+[submodule "_.emacs.d/markdown-mode"]
+	path = _.emacs.d/markdown-mode
+	url = git://jblevins.org/git/markdown-mode.git

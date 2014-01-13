@@ -62,6 +62,9 @@
 (global-set-key (kbd "C-c x") 'ace-jump-char-mode)
 (global-set-key (kbd "C-c z") 'ace-jump-line-mode)
 
+(add-to-list 'load-path "/home/michal/.emacs.d/markdown-mode")
+(require 'markdown-mode)
+
 (require 'flymake)
 ;(require 'flymake-cursor)
 
