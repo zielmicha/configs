@@ -13,3 +13,9 @@
 [submodule "_.emacs.d/paredit"]
 	path = _.emacs.d/paredit
 	url = http://mumble.net/~campbell/git/paredit.git/
+[submodule "_.emacs.d/nimrod-mode"]
+	path = _.emacs.d/nimrod-mode
+	url = https://github.com/reactormonk/nimrod-mode
+[submodule "_.emacs.d/auto-complete"]
+	path = _.emacs.d/auto-complete
+	url = http://cx4a.org/repo/auto-complete.git

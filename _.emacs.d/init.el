@@ -112,15 +112,21 @@
 ;(global-set-key [next]     'pager-page-down)
 ;(global-set-key [prior]    'pager-page-up)
 
-(add-to-list 'load-path "~/.emacs.d/pymacs")
+(add-to-list 'load-path "~/.emacs.d/auto-complete/lib/popup")
+(add-to-list 'load-path "~/.emacs.d/auto-complete/lib/fuzzy")
+(add-to-list 'load-path "~/.emacs.d/auto-complete")
+(add-to-list 'load-path "~/.emacs.d/nimrod-mode")
+(require 'nimrod-mode)
+
+;(add-to-list 'load-path "~/.emacs.d/pymacs")
 ;(add-to-list 'load-path "~/.emacs.d/ropemacs")
 
-(autoload 'pymacs-apply "pymacs")
-(autoload 'pymacs-call "pymacs")
-(autoload 'pymacs-eval "pymacs" nil t)
-(autoload 'pymacs-exec "pymacs" nil t)
-(autoload 'pymacs-load "pymacs" nil t)
-(autoload 'pymacs-autoload "pymacs")
+;(autoload 'pymacs-apply "pymacs")
+;(autoload 'pymacs-call "pymacs")
+;(autoload 'pymacs-eval "pymacs" nil t)
+;(autoload 'pymacs-exec "pymacs" nil t)
+;(autoload 'pymacs-load "pymacs" nil t)
+;(autoload 'pymacs-autoload "pymacs")
 
 ;(require 'pymacs)
 ;(pymacs-load "ropemacs" "rope-")
