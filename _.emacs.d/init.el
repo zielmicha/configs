@@ -143,6 +143,11 @@
                                (define-key paredit-mode-map (kbd "C-<right>") 'right-word)
                                (message "Whooo!")))
 
+(setq load-path (cons (concat "/usr/share/emacs/site-lisp/erlang") load-path))
+(setq erlang-root-dir "/usr/lib/erlang")
+(setq exec-path (cons "/usr/lib/erlang/bin" exec-path))
+(require 'erlang-start)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
