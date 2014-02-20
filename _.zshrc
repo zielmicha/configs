@@ -145,3 +145,7 @@ zle -N x-yank
 bindkey -e '\eW' x-copy-region-as-kill
 bindkey -e '^W' x-kill-region
 bindkey -e '^Y' x-yank
+
+#export ARDUINO_DIR=/home/sudar/apps/arduino-1.0.5
+export ARDMK_DIR=/home/michal/apps/Arduino-Makefile
+export AVR_TOOLS_DIR=/usr
