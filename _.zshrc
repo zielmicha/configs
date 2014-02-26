@@ -88,7 +88,7 @@ _mopen() {
 }
 alias open=_mopen
 
-export PATH="$PATH:$HOME/bin:/usr/local/cuda-5.5/bin/"
+export PATH="$HOME/.cabal/bin:$PATH:$HOME/bin:/usr/local/cuda-5.5/bin/"
 export COLOBOT_EDITOR="emacs"
 
 export USE_CCACHE=1
