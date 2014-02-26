@@ -150,6 +150,11 @@
 
 (require 'haxe-mode)
 
+(add-to-list 'load-path "~/.emacs.d/helm")
+(require 'helm-config)
+
+(global-set-key (kbd "C-c h") 'helm-mini)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

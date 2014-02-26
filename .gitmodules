@@ -22,3 +22,6 @@
 [submodule "_.emacs.d/markdown-mode"]
 	path = _.emacs.d/markdown-mode
 	url = git://jblevins.org/git/markdown-mode.git
+[submodule "_.emacs.d/helm"]
+	path = _.emacs.d/helm
+	url = https://github.com/emacs-helm/helm.git
