@@ -25,3 +25,6 @@
 [submodule "_.emacs.d/helm"]
 	path = _.emacs.d/helm
 	url = https://github.com/emacs-helm/helm.git
+[submodule "_.emacs.d/helm-git-grep"]
+	path = _.emacs.d/helm-git-grep
+	url = https://github.com/yasuyk/helm-git-grep

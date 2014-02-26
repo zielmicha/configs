@@ -155,6 +155,16 @@
 
 (global-set-key (kbd "C-c h") 'helm-mini)
 
+(add-to-list 'load-path "~/.emacs.d/helm-git-grep")
+
+(require 'helm-git-grep)
+(global-set-key (kbd "C-c g") 'helm-git-grep)
+;; Invoke `helm-git-grep' from isearch.
+(define-key isearch-mode-map (kbd "C-c g") 'helm-git-grep-from-isearch)
+;; Invoke `helm-git-grep' from other helm.
+(eval-after-load 'helm
+  '(define-key helm-map (kbd "C-c g") 'helm-git-grep-from-helm))
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
