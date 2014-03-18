@@ -157,6 +157,13 @@
 
 (add-to-list 'load-path "~/.emacs.d/helm-git-grep")
 
+(add-to-list 'load-path "~/.emacs.d/dart-mode")
+(require 'dart-mode)
+(setq auto-mode-alist
+      (append '(("\\.dart$" . dart-mode)
+                ) auto-mode-alist))
+
+
 (require 'helm-git-grep)
 (global-set-key (kbd "C-c g") 'helm-git-grep)
 ;; Invoke `helm-git-grep' from isearch.

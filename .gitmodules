@@ -28,3 +28,6 @@
 [submodule "_.emacs.d/helm-git-grep"]
 	path = _.emacs.d/helm-git-grep
 	url = https://github.com/yasuyk/helm-git-grep
+[submodule "_.emacs.d/dart-mode"]
+	path = _.emacs.d/dart-mode
+	url = https://github.com/nex3/dart-mode

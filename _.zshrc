@@ -149,3 +149,5 @@ bindkey -e '^Y' x-yank
 #export ARDUINO_DIR=/home/sudar/apps/arduino-1.0.5
 export ARDMK_DIR=/home/michal/apps/Arduino-Makefile
 export AVR_TOOLS_DIR=/usr
+export PATH="$PATH:$HOME/apps/arm-eabi-4.6/bin"
+export PATH="$PATH:$HOME/apps/depot_tools"
