@@ -151,3 +151,4 @@ export ARDMK_DIR=/home/michal/apps/Arduino-Makefile
 export AVR_TOOLS_DIR=/usr
 export PATH="$PATH:$HOME/apps/arm-eabi-4.6/bin"
 export PATH="$PATH:$HOME/apps/depot_tools"
+export PATH="$PATH:$HOME/apps/dart-sdk/bin"
