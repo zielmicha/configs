@@ -31,3 +31,6 @@
 [submodule "_.emacs.d/dart-mode"]
 	path = _.emacs.d/dart-mode
 	url = https://github.com/nex3/dart-mode
+[submodule "_.emacs.d/yaml-mode"]
+	path = _.emacs.d/yaml-mode
+	url = https://github.com/yoshiki/yaml-mode

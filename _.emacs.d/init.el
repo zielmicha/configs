@@ -163,6 +163,8 @@
       (append '(("\\.dart$" . dart-mode)
                 ) auto-mode-alist))
 
+(add-to-list 'load-path "~/.emacs.d/yaml-mode")
+(require 'yaml-mode)
 
 (require 'helm-git-grep)
 (global-set-key (kbd "C-c g") 'helm-git-grep)
