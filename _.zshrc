@@ -111,6 +111,9 @@ bindkey "^[[1;5D" backward-word
 export LD_LIBRARY_PATH=/usr/local/lib
 
 [[ -e /etc/zsh_command_not_found ]] && source /etc/zsh_command_not_found
+[[ -e /usr/share/virtualenvwrapper/virtualenvwrapper_lazy.sh ]] \
+   && source /usr/share/virtualenvwrapper/virtualenvwrapper_lazy.sh
+
 
 export PATH="$PATH:$HOME/bin:/home/michal/apps/android-sdk-linux/tools:/home/michal/apps/android-sdk-linux/platform-tools:/home/michal/apps/android-ndk-r9:/usr/sbin:/sbin:/home/michal/oi/emscripten:/home/michal/oi/mxe/usr/bin/:$HOME/.babel/bin"
 alias vi=vim
