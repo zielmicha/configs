@@ -34,3 +34,6 @@
 [submodule "_.emacs.d/yaml-mode"]
 	path = _.emacs.d/yaml-mode
 	url = https://github.com/yoshiki/yaml-mode
+[submodule "_.emacs.d/solarized"]
+	path = _.emacs.d/solarized
+	url = https://github.com/bbatsov/solarized-emacs
