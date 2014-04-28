@@ -155,3 +155,10 @@ export AVR_TOOLS_DIR=/usr
 export PATH="$PATH:$HOME/apps/arm-eabi-4.6/bin"
 export PATH="$PATH:$HOME/apps/depot_tools"
 export PATH="$PATH:$HOME/apps/dart-sdk/bin"
+
+case $TERM in
+    xterm*)
+        precmd () {print -Pn "\e]0;$PWD\a"}
+        preexec() {print -Pn "\e]0;$PWD: $2\a"}
+        ;;
+esac
