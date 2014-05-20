@@ -185,7 +185,12 @@
 (add-to-list 'load-path "~/.emacs.d/elpy")
 (add-to-list 'load-path "~/.emacs.d/company-mode")
 (add-to-list 'load-path "~/.emacs.d/yasnippet")
+(add-to-list 'load-path "~/.emacs.d/pymacs")
 (require 'elpy)
+(setq elpy-default-minor-modes (delete 'highlight-indentation-mode elpy-default-minor-modes))
+(elpy-use-ipython)
+(setq elpy-rpc-backend "jedi")
+(elpy-enable)
 
 ;(require 'color-theme)
 ;(setq color-theme-is-global t)
