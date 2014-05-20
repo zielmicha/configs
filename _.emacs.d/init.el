@@ -182,6 +182,11 @@
 
 (require 'scad)
 
+(add-to-list 'load-path "~/.emacs.d/elpy")
+(add-to-list 'load-path "~/.emacs.d/company-mode")
+(add-to-list 'load-path "~/.emacs.d/yasnippet")
+(require 'elpy)
+
 ;(require 'color-theme)
 ;(setq color-theme-is-global t)
 ;(eval-after-load "color-theme" '(color-theme-hober))
