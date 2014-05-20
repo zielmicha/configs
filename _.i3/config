@@ -100,6 +100,7 @@ bindsym KP_6 workspace 6
 bindsym KP_7 workspace 7
 bindsym KP_8 workspace 8
 bindsym KP_9 workspace 9
+bindsym KP_0 workspace 10
 
 bindsym Shift+KP_End move workspace 1
 bindsym Shift+KP_Down move workspace 2
@@ -110,6 +111,7 @@ bindsym Shift+KP_Right move workspace 6
 bindsym Shift+KP_Home move workspace 7
 bindsym Shift+KP_Up move workspace 8
 bindsym Shift+KP_Prior move workspace 9
+bindsym Shift+KP_Insert move workspace 10
 
 # move focused container to workspace
 bindsym $mod+Shift+exclam move workspace 1
@@ -191,6 +193,7 @@ bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -- -5%
 exec_always xmodmap ~/.xmodmap
 
 for_window [title="touchciv"] floating enable
+for_window [title="touchciv"] move workspace 10
 
 for_window [class="Plasma-desktop"] border none
 for_window [class="krunner"] border none
@@ -199,8 +202,6 @@ for_window [class="Plasmoidviewer"] floating enable;
 for_window [class="Klipper"] floating enable; border none
 
 exec gnome-settings-daemon
-
-for_window [title="touchciv"] move workspace 4
 
 assign [class="Gimp"] gimp
 bindsym $mod+g workspace gimp
