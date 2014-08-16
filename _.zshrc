@@ -66,6 +66,7 @@ alias l=ls
 alias gs="git status"
 alias gc="git commit"
 alias gd="git diff"
+alias gco="git checkout"
 alias ocen="/home/michal/algo/ocen/ocen"
 alias grep="grep --color=auto"
 alias py="/usr/bin/ipython --no-confirm-exit --no-banner"
@@ -162,3 +163,7 @@ case $TERM in
         preexec() {print -Pn "\e]0;$PWD: $2\a"}
         ;;
 esac
+
+export GOROOT=$HOME/apps/go
+
+alias find=findfix

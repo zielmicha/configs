@@ -187,16 +187,27 @@
 (add-to-list 'load-path "~/.emacs.d/yasnippet")
 (add-to-list 'load-path "~/.emacs.d/pymacs")
 (require 'elpy)
-(setq elpy-default-minor-modes (delete 'highlight-indentation-mode elpy-default-minor-modes))
+(setq elpy-default-minor-modes
+      (delete
+       'auto-complete-mode
+       (delete 'highlight-indentation-mode
+               (delete
+                'yas-minor-mode
+                elpy-default-minor-modes))))
 (elpy-use-ipython)
 (setq elpy-rpc-backend "jedi")
 (elpy-enable)
+
+(require 'protobuf-mode)
 
 ;(require 'color-theme)
 ;(setq color-theme-is-global t)
 ;(eval-after-load "color-theme" '(color-theme-hober))
 
 ;(require 'doremi-cmd)
+
+;(set-default-font "-unknown-Input Serif-normal-normal-normal-*-*-*-*-*-*-0-iso10646-1")
+;(set-default-font "-unknown-Input Serif Condensed-light-normal-condensed-*-*-*-*-*-*-0-iso10646-1")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -206,7 +217,8 @@
  '(custom-enabled-themes (quote (tsdh-dark)))
  '(custom-safe-themes (quote ("e16a771a13a202ee6e276d06098bc77f008b73bbac4d526f160faa2d76c1dd0e" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" default)))
  '(help-at-pt-display-when-idle (quote (flymake-overlay)) nil (help-at-pt))
- '(help-at-pt-timer-delay 0.5))
+ '(help-at-pt-timer-delay 0.5)
+ '(inhibit-startup-screen t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
