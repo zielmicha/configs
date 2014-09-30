@@ -57,10 +57,12 @@
   uniquify-separator ":")
 
 (add-to-list 'load-path "/home/michal/.emacs.d/ace-jump-mode")
+(require 'ace-jump-mode)
 (global-set-key (kbd "C-c c") 'ace-jump-word-mode)
 (global-set-key (kbd "C-d") 'ace-jump-word-mode)
 (global-set-key (kbd "C-c x") 'ace-jump-char-mode)
 (global-set-key (kbd "C-c z") 'ace-jump-line-mode)
+(global-set-key (kbd "C-c l") 'ace-jump-line-mode)
 
 (add-to-list 'load-path "/home/michal/.emacs.d/markdown-mode")
 (require 'markdown-mode)
