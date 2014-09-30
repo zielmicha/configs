@@ -86,7 +86,7 @@
                '("\\.py\\'" flymake-pyflakes-init))
 ;(add-hook 'find-file-hook 'flymake-find-file-hook)
 
-(require 'dotlang-mode)
+;(require 'dotlang-mode)
 
 ;; source: http://steve.yegge.googlepages.com/my-dot-emacs-file
 (defun rename-file-and-buffer (new-name)

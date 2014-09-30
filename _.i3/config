@@ -183,8 +183,10 @@ exec --no-startup-id nm-applet
 exec --no-startup-id gnome-power-manager
 exec --no-startup-id xrandr --output VGA1 --primary --auto --right-of HDMI1 --output HDMI1 --auto
 
-bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5%
-bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -- -5%
+#bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5%
+#bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -- -5%
+bindsym XF86AudioRaiseVolume exec amixer set Master $(echo $(amixer get Master | grep -Po 'Mono: Playback (\d+)' | cut -d' ' -f3) + 3 | bc)
+bindsym XF86AudioLowerVolume exec amixer set Master $(echo $(amixer get Master | grep -Po 'Mono: Playback (\d+)' | cut -d' ' -f3) - 3 | bc)
 #bindsym Alt+Ctrl+L exec xdg-screensaver lock
 
 #bindsym $mod+Shift+a move workspace to output right
