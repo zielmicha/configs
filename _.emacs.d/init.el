@@ -202,6 +202,14 @@
 
 (require 'protobuf-mode)
 
+(setq auto-mode-alist
+	  (append
+	   '(("CMakeLists\\.txt\\'" . cmake-mode))
+	   '(("\\.cmake\\'" . cmake-mode))
+	   auto-mode-alist))
+
+(require 'cmake-mode)
+
 ;(require 'color-theme)
 ;(setq color-theme-is-global t)
 ;(eval-after-load "color-theme" '(color-theme-hober))
