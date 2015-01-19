@@ -166,4 +166,5 @@ esac
 
 export GOROOT=$HOME/apps/go
 
-alias find=findfix
+#alias find=findfix
+export CHROME_DEVEL_SANDBOX=/usr/local/sbin/chrome-devel-sandbox
