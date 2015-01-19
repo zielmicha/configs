@@ -57,10 +57,12 @@
   uniquify-separator ":")
 
 (add-to-list 'load-path "/home/michal/.emacs.d/ace-jump-mode")
+(require 'ace-jump-mode)
 (global-set-key (kbd "C-c c") 'ace-jump-word-mode)
 (global-set-key (kbd "C-d") 'ace-jump-word-mode)
 (global-set-key (kbd "C-c x") 'ace-jump-char-mode)
 (global-set-key (kbd "C-c z") 'ace-jump-line-mode)
+(global-set-key (kbd "C-c l") 'ace-jump-line-mode)
 
 (add-to-list 'load-path "/home/michal/.emacs.d/markdown-mode")
 (require 'markdown-mode)
@@ -217,6 +219,14 @@
                      (looking-at ".*[(,][ \t]*\\[[^]]*\\][ \t]*[({][^}]*$"))))
             0                           ; no additional indent
           ad-do-it)))                   ; default behavior
+
+(setq auto-mode-alist
+	  (append
+	   '(("CMakeLists\\.txt\\'" . cmake-mode))
+	   '(("\\.cmake\\'" . cmake-mode))
+	   auto-mode-alist))
+
+(require 'cmake-mode)
 
 ;(require 'color-theme)
 ;(setq color-theme-is-global t)
