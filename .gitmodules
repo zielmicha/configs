@@ -46,3 +46,18 @@
 [submodule "_.emacs.d/yasnippet"]
 	path = _.emacs.d/yasnippet
 	url = https://github.com/capitaomorte/yasnippet
+[submodule "_.emacs.d/multi-web-mode"]
+	path = _.emacs.d/multi-web-mode
+	url = https://github.com/fgallina/multi-web-mode
+[submodule "_.emacs.d/multiple-cursors.el"]
+	path = _.emacs.d/multiple-cursors.el
+	url = https://github.com/magnars/multiple-cursors.el
+[submodule "_.emacs.d/emacs-gradle-mode"]
+	path = _.emacs.d/emacs-gradle-mode
+	url = https://github.com/jacobono/emacs-gradle-mode
+[submodule "_.emacs.d/s.el"]
+	path = _.emacs.d/s.el
+	url = https://github.com/magnars/s.el
+[submodule "_.emacs.d/groovy-emacs-modes"]
+	path = _.emacs.d/groovy-emacs-modes
+	url = https://github.com/Groovy-Emacs-Modes/groovy-emacs-modes
