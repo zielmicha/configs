@@ -61,3 +61,6 @@
 [submodule "_.emacs.d/groovy-emacs-modes"]
 	path = _.emacs.d/groovy-emacs-modes
 	url = https://github.com/Groovy-Emacs-Modes/groovy-emacs-modes
+[submodule "_.zsh/git-prompt"]
+	path = _.zsh/git-prompt
+	url = https://github.com/olivierverdier/zsh-git-prompt
