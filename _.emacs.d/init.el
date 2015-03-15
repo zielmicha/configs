@@ -261,6 +261,13 @@
 ;(set-default-font "-unknown-Input Serif-normal-normal-normal-*-*-*-*-*-*-0-iso10646-1")
 ;(set-default-font "-unknown-Input Serif Condensed-light-normal-condensed-*-*-*-*-*-*-0-iso10646-1")
 
+(add-to-list 'load-path "~/.emacs.d/dockerfile-mode")
+(require 'dockerfile-mode)
+
+(add-to-list 'load-path "~/.emacs.d/nginx-mode")
+(require 'nginx-mode)
+
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

@@ -168,3 +168,5 @@ export GOROOT=$HOME/apps/go
 
 #alias find=findfix
 export CHROME_DEVEL_SANDBOX=/usr/local/sbin/chrome-devel-sandbox
+
+export ANDROID_HOME=/home/michal/apps/android-sdk-linux

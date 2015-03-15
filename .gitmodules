@@ -64,3 +64,9 @@
 [submodule "_.zsh/git-prompt"]
 	path = _.zsh/git-prompt
 	url = https://github.com/olivierverdier/zsh-git-prompt
+[submodule "_.emacs.d/dockerfile-mode"]
+	path = _.emacs.d/dockerfile-mode
+	url = https://github.com/spotify/dockerfile-mode
+[submodule "_.emacs.d/nginx-mode"]
+	path = _.emacs.d/nginx-mode
+	url = https://github.com/ajc/nginx-mode/
