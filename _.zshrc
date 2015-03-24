@@ -170,3 +170,10 @@ export GOROOT=$HOME/apps/go
 export CHROME_DEVEL_SANDBOX=/usr/local/sbin/chrome-devel-sandbox
 
 export ANDROID_HOME=/home/michal/apps/android-sdk-linux
+
+hibernate() {
+    i3lock
+    sudo pm-suspend
+    setxkbmap -layout pl
+    xmodmap ~/.xmodmap
+}
