@@ -175,3 +175,10 @@ enableqt() {
      export PATH="/home/michal/apps/Qt/5.4/gcc_64/bin:/home/michal/apps/Qt/Tools/QtCreator/bin:$PATH"
      rehash
 }
+
+hibernate() {
+    i3lock
+    sudo pm-suspend
+    setxkbmap -layout pl
+    xmodmap ~/.xmodmap
+}
