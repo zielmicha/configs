@@ -181,6 +181,20 @@
 (eval-after-load 'helm
   '(define-key helm-map (kbd "C-c g") 'helm-git-grep-from-helm))
 
+;(global-set-key (kbd "C-x C-f") 'helm-find-files)
+;(global-set-key (kbd "C-c b") 'helm-buffers-list)
+
+(add-to-list 'load-path "~/.emacs.d/flx")
+(require 'flx)
+(require 'flx-ido)
+
+(add-to-list 'load-path "~/.emacs.d/dash.el")
+(add-to-list 'load-path "~/.emacs.d/projectile")
+(require 'projectile)
+(projectile-global-mode)
+(global-set-key (kbd "C-x p") 'projectile-find-file)
+(setq projectile-enable-caching t)
+
 (require 'flymake-python-pyflakes)
 (add-hook 'python-mode-hook 'flymake-python-pyflakes-load)
 
@@ -195,15 +209,16 @@
 (add-to-list 'load-path "~/.emacs.d/pymacs")
 (require 'elpy)
 (setq elpy-default-minor-modes
-      (delete
-       'auto-complete-mode
+      ;(delete
+      ; 'auto-complete-mode
        (delete 'highlight-indentation-mode
                (delete
                 'yas-minor-mode
-                elpy-default-minor-modes))))
+                elpy-default-minor-modes)))
 (elpy-use-ipython)
 (setq elpy-rpc-backend "jedi")
 (elpy-enable)
+(ac-set-trigger-key "RET")
 
 (require 'protobuf-mode)
 
@@ -267,6 +282,8 @@
 (add-to-list 'load-path "~/.emacs.d/nginx-mode")
 (require 'nginx-mode)
 
+(require 'python-auto-import)
+(global-set-key (kbd "C-c a") 'python-auto-import)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.

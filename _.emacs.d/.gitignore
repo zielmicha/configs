@@ -5,3 +5,6 @@
 /elpa
 /tutorial
 /ac-comphist.dat
+/*.eld
+/*.cache
+/*-cache

@@ -70,3 +70,12 @@
 [submodule "_.emacs.d/nginx-mode"]
 	path = _.emacs.d/nginx-mode
 	url = https://github.com/ajc/nginx-mode/
+[submodule "_.emacs.d/projectile"]
+	path = _.emacs.d/projectile
+	url = https://github.com/bbatsov/projectile
+[submodule "_.emacs.d/flx"]
+	path = _.emacs.d/flx
+	url = https://github.com/lewang/flx
+[submodule "_.emacs.d/dash.el"]
+	path = _.emacs.d/dash.el
+	url = https://github.com/magnars/dash.el
