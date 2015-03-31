@@ -170,3 +170,8 @@ export GOROOT=$HOME/apps/go
 export CHROME_DEVEL_SANDBOX=/usr/local/sbin/chrome-devel-sandbox
 
 export ANDROID_HOME=/home/michal/apps/android-sdk-linux
+
+enableqt() {
+     export PATH="/home/michal/apps/Qt/5.4/gcc_64/bin:/home/michal/apps/Qt/Tools/QtCreator/bin:$PATH"
+     rehash
+}
