@@ -22,6 +22,8 @@
   kept-old-versions 2
   version-control t)
 
+(set-face-attribute 'default nil :height 100)
+
 ;(set-face-attribute 'default nil :font "Inconsolata-14")
 
 (require 'package)
