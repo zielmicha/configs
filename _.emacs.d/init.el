@@ -34,8 +34,6 @@
 (add-to-list 'load-path "/home/michal/.emacs.d")
 (add-to-list 'load-path "/home/michal/dotlang")
 
-(load "util_func")
-
 ; favourite keybindings
 (global-set-key "\C-l" 'goto-line)
 (global-set-key [end] 'end-of-line)
@@ -122,8 +120,6 @@
 (add-to-list 'load-path "~/.emacs.d/auto-complete/lib/popup")
 (add-to-list 'load-path "~/.emacs.d/auto-complete/lib/fuzzy")
 (add-to-list 'load-path "~/.emacs.d/auto-complete")
-(add-to-list 'load-path "~/.emacs.d/nimrod-mode")
-(require 'nimrod-mode)
 
 ; jump between header and cpp
 (add-hook 'c-mode-common-hook
@@ -152,12 +148,7 @@
                                (define-key paredit-mode-map (kbd "C-<right>") 'right-word)
                                (message "Whooo!")))
 
-(setq load-path (cons (concat "/usr/share/emacs/site-lisp/erlang") load-path))
-(setq erlang-root-dir "/usr/lib/erlang")
-(setq exec-path (cons "/usr/lib/erlang/bin" exec-path))
-(require 'erlang-start)
 
-(require 'haxe-mode)
 
 (add-to-list 'load-path "~/.emacs.d/helm")
 (require 'helm-config)
@@ -166,14 +157,9 @@
 
 (add-to-list 'load-path "~/.emacs.d/helm-git-grep")
 
-(add-to-list 'load-path "~/.emacs.d/dart-mode")
-(require 'dart-mode)
 (setq auto-mode-alist
       (append '(("\\.dart$" . dart-mode)
                 ) auto-mode-alist))
-
-(add-to-list 'load-path "~/.emacs.d/yaml-mode")
-(require 'yaml-mode)
 
 (require 'helm-git-grep)
 (global-set-key (kbd "C-c g") 'helm-git-grep)
@@ -222,8 +208,6 @@
 (elpy-enable)
 (ac-set-trigger-key "RET")
 
-(require 'protobuf-mode)
-
 (defadvice c-lineup-arglist (around my activate)
   "Improve indentation of continued C++11 lambda function opened as argument."
   (setq ad-return-value
@@ -263,11 +247,6 @@
 (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
 
 (add-to-list 'load-path "~/.emacs.d/s.el")
-(add-to-list 'load-path "~/.emacs.d/emacs-gradle-mode")
-(require 'gradle-mode)
-
-(add-to-list 'load-path "~/.emacs.d/groovy-emacs-modes")
-(require 'groovy-mode)
 
 ;(require 'color-theme)
 ;(setq color-theme-is-global t)
@@ -278,14 +257,11 @@
 ;(set-default-font "-unknown-Input Serif-normal-normal-normal-*-*-*-*-*-*-0-iso10646-1")
 ;(set-default-font "-unknown-Input Serif Condensed-light-normal-condensed-*-*-*-*-*-*-0-iso10646-1")
 
-(add-to-list 'load-path "~/.emacs.d/dockerfile-mode")
-(require 'dockerfile-mode)
-
-(add-to-list 'load-path "~/.emacs.d/nginx-mode")
-(require 'nginx-mode)
-
 (require 'python-auto-import)
 (global-set-key (kbd "C-c a") 'python-auto-import)
+
+(load "~/.emacs.d/init/util_func")
+(load "~/.emacs.d/init/modes")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
