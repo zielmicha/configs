@@ -182,3 +182,14 @@ hibernate() {
     setxkbmap -layout pl
     xmodmap ~/.xmodmap
 }
+
+set_backlight() {
+    sudo env VALUE="$1" python <<'EOF'
+import os
+v1 = int(os.environ['VALUE'])
+p='/sys/class/backlight/intel_backlight/'
+v = int(open(p + 'max_brightness').read().strip())
+with open(p + 'brightness', 'w') as f:
+     f.write(str(int(v * v1 / 100)))
+EOF
+}
