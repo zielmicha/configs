@@ -4,7 +4,6 @@
 (setq comint-prompt-read-only t)
 (setq-default indicate-empty-lines t)
 (setq require-final-newline 't)
-(ido-mode 1)
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 4)
 (delete-selection-mode 1)
@@ -31,18 +30,8 @@
                            ("marmalade" . "http://marmalade-repo.org/packages/")
                            ("melpa" . "http://melpa.milkbox.net/packages/")))
 
-(add-to-list 'load-path "/home/michal/.emacs.d")
-(add-to-list 'load-path "/home/michal/dotlang")
-
-; favourite keybindings
-(global-set-key "\C-l" 'goto-line)
-(global-set-key [end] 'end-of-line)
-(global-set-key [home] 'beginning-of-line)
-(global-set-key "\C-o" 'other-window)
-(global-set-key "\C-b" 'ido-switch-buffer)
-(global-set-key [insert] nil)
-;(global-set-key "\C-d" "\C-a\C- \C-n\M-w\C-y")
-(global-set-key "\C-c\C-d" 'duplicate-line)
+(add-to-list 'load-path "~/.emacs.d")
+(add-to-list 'load-path "~/dotlang")
 
 (require 'python)
 (define-key python-mode-map (kbd "RET") 'newline-and-indent)
@@ -51,29 +40,8 @@
 (require 'nyan-mode)
 (nyan-mode)
 
-(require 'uniquify)
-(setq
-  uniquify-buffer-name-style 'post-forward
-  uniquify-separator ":")
-
-(add-to-list 'load-path "/home/michal/.emacs.d/ace-jump-mode")
-(require 'ace-jump-mode)
-(global-set-key (kbd "C-c c") 'ace-jump-word-mode)
-(global-set-key (kbd "C-d") 'ace-jump-word-mode)
-(global-set-key (kbd "C-c x") 'ace-jump-char-mode)
-(global-set-key (kbd "C-c z") 'ace-jump-line-mode)
-(global-set-key (kbd "C-c l") 'ace-jump-line-mode)
-
-(add-to-list 'load-path "/home/michal/.emacs.d/markdown-mode")
-(require 'markdown-mode)
-
 (require 'flymake)
 ;(require 'flymake-cursor)
-
-(require 'cython-mode)
-(setq auto-mode-alist
-      (append '(("\\.pyx$" . cython_mode)
-                ) auto-mode-alist))
 
 (defun flymake-pyflakes-init ()
     (let* ((temp-file (flymake-init-create-temp-buffer-copy
@@ -87,28 +55,6 @@
 ;(add-hook 'find-file-hook 'flymake-find-file-hook)
 
 ;(require 'dotlang-mode)
-
-;; source: http://steve.yegge.googlepages.com/my-dot-emacs-file
-(defun rename-file-and-buffer (new-name)
-  "Renames both current buffer and file it's visiting to NEW-NAME."
-  (interactive "sNew name: ")
-  (let ((name (buffer-name))
-        (filename (buffer-file-name)))
-    (if (not filename)
-        (message "Buffer '%s' is not visiting a file!" name)
-      (if (get-buffer new-name)
-          (message "A buffer named '%s' already exists!" new-name)
-        (progn
-          (rename-file name new-name 1)
-          (rename-buffer new-name)
-          (set-visited-file-name new-name)
-          (set-buffer-modified-p nil))))))
-
-
-(keyboard-translate ?( ?()
-(keyboard-translate ?[ ?[)
-(keyboard-translate ?) ?))
-(keyboard-translate ?] ?])
 
 (setq c-default-style "linux"
           c-basic-offset 4)
@@ -126,21 +72,6 @@
   (lambda()
     (local-set-key  (kbd "C-c o") 'ff-find-other-file)))
 
-;(add-to-list 'load-path "~/.emacs.d/pymacs")
-;(add-to-list 'load-path "~/.emacs.d/ropemacs")
-
-;(autoload 'pymacs-apply "pymacs")
-;(autoload 'pymacs-call "pymacs")
-;(autoload 'pymacs-eval "pymacs" nil t)
-;(autoload 'pymacs-exec "pymacs" nil t)
-;(autoload 'pymacs-load "pymacs" nil t)
-;(autoload 'pymacs-autoload "pymacs")
-
-;(require 'pymacs)
-;(pymacs-load "ropemacs" "rope-")
-;(setq ropemacs-enable-autoimport t)
-;(setq ropemacs-enable-shortcuts nil)
-
 (add-to-list 'load-path "~/.emacs.d/paredit")
 (require 'paredit)
 (add-hook 'paredit-mode-hook (lambda ()
@@ -149,17 +80,12 @@
                                (message "Whooo!")))
 
 
-
 (add-to-list 'load-path "~/.emacs.d/helm")
 (require 'helm-config)
 
 (global-set-key (kbd "C-c h") 'helm-mini)
 
 (add-to-list 'load-path "~/.emacs.d/helm-git-grep")
-
-(setq auto-mode-alist
-      (append '(("\\.dart$" . dart-mode)
-                ) auto-mode-alist))
 
 (require 'helm-git-grep)
 (global-set-key (kbd "C-c g") 'helm-git-grep)
@@ -221,13 +147,6 @@
             0                           ; no additional indent
           ad-do-it)))                   ; default behavior
 
-(setq auto-mode-alist
-	  (append
-	   '(("CMakeLists\\.txt\\'" . cmake-mode))
-	   '(("\\.cmake\\'" . cmake-mode))
-	   auto-mode-alist))
-
-(require 'cmake-mode)
 
 (add-to-list 'load-path "~/.emacs.d/multi-web-mode")
 (require 'multi-web-mode)
@@ -240,11 +159,6 @@
 
 (add-to-list 'load-path "~/.emacs.d/multiple-cursors.el")
 (require 'multiple-cursors)
-
-(global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
-(global-set-key (kbd "C->") 'mc/mark-next-like-this)
-(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
-(global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
 
 (add-to-list 'load-path "~/.emacs.d/s.el")
 
@@ -260,8 +174,12 @@
 (require 'python-auto-import)
 (global-set-key (kbd "C-c a") 'python-auto-import)
 
+(load "~/.emacs.d/init/navigation")
 (load "~/.emacs.d/init/util_func")
 (load "~/.emacs.d/init/modes")
+(load "~/.emacs.d/init/keyboard")
+(load "~/.emacs.d/init/extensions")
+
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.

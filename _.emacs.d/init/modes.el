@@ -1,9 +1,14 @@
+(add-to-list 'load-path "~/.emacs.d/markdown-mode")
+(require 'markdown-mode)
+
 (add-to-list 'load-path "~/.emacs.d/nimrod-mode")
 (require 'nimrod-mode)
 
 (require 'protobuf-mode)
 
 (require 'haxe-mode)
+
+(require 'cython-mode)
 
 (add-to-list 'load-path "~/.emacs.d/dockerfile-mode")
 (require 'dockerfile-mode)
@@ -22,6 +27,8 @@
 
 (add-to-list 'load-path "~/.emacs.d/dart-mode")
 (require 'dart-mode)
+
+(require 'cmake-mode)
 
 ;(setq load-path (cons (concat "/usr/share/emacs/site-lisp/erlang") load-path))
 ;(setq erlang-root-dir "/usr/lib/erlang")
