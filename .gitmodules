@@ -39,7 +39,7 @@
 	url = https://github.com/bbatsov/solarized-emacs
 [submodule "_.emacs.d/elpy"]
 	path = _.emacs.d/elpy
-	url = https://github.com/jorgenschaefer/elpy
+	url = https://github.com/zielmicha/elpy
 [submodule "_.emacs.d/company-mode"]
 	path = _.emacs.d/company-mode
 	url = https://github.com/company-mode/company-mode
