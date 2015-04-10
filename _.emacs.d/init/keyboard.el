@@ -17,3 +17,9 @@
 (global-set-key (kbd "C->") 'mc/mark-next-like-this)
 (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
+
+(global-set-key (kbd "C-c c") 'ace-jump-word-mode)
+(global-set-key (kbd "C-d") 'ace-jump-word-mode)
+(global-set-key (kbd "C-c x") 'ace-jump-char-mode)
+(global-set-key (kbd "C-c z") 'ace-jump-line-mode)
+(global-set-key (kbd "C-c l") 'ace-jump-line-mode)

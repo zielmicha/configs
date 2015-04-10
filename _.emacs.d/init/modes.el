@@ -34,3 +34,17 @@
 ;(setq erlang-root-dir "/usr/lib/erlang")
 ;(setq exec-path (cons "/usr/lib/erlang/bin" exec-path))
 ;(require 'erlang-start)
+
+(add-to-list 'load-path "~/.emacs.d/multi-web-mode")
+(require 'multi-web-mode)
+(setq mweb-default-major-mode 'html-mode)
+(setq mweb-tags '((php-mode "<\\?php\\|<\\? \\|<\\?=" "\\?>")
+                  (js-mode "<script +\\(type=\"text/javascript\"\\|language=\"javascript\"\\)[^>]*>" "</script>")
+                  (css-mode "<style +type=\"text/css\"[^>]*>" "</style>")))
+(setq mweb-filename-extensions '("php" "htm" "html" "ctp" "phtml" "php4" "php5"))
+(multi-web-global-mode 1)
+
+(require 'scad)
+
+(add-to-list 'load-path "~/dotlang")
+;(require 'dotlang-mode)

@@ -11,3 +11,7 @@
 (setq auto-mode-alist
       (append '(("\\.dart$" . dart-mode)
                 ) auto-mode-alist))
+
+(setq auto-mode-alist
+      (append '(("\\.h$" . c++-mode)
+                ) auto-mode-alist))
