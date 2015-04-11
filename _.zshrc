@@ -25,7 +25,7 @@ export PROMPT='%{$fg[green]%}michal%{$reset_color%} %{$fg[purple]%}%~%{$reset_co
 #export PS1='[%T] %n@%m:%~# '
 REPORTTIME=10
 
-# Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
+# Keep 10000 lines of history within the shell and save it to ~/.zsh_history:
 HISTSIZE=10000
 SAVEHIST=10000
 HISTFILE=~/.zsh_history
@@ -80,6 +80,7 @@ alias sk=ls
 alias lks=ls
 alias pidgin="pidgin -f"
 alias ack="ack-grep"
+setopt autocd
 
 _mopen() {
 	for i in "$@"; do
