@@ -39,3 +39,7 @@
 
 (set-variable 'ycmd-extra-conf-whitelist '("~/husarion/robocore-*"
                                            "~/multilink"))
+
+(setq ycmd-goto-lambda (lambda () (local-set-key (kbd "M-.") 'ycmd-goto)))
+(add-hook 'c++-mode-hook ycmd-goto-lambda)
+(add-hook 'c-mode-hook ycmd-goto-lambda)
