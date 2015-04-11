@@ -1,5 +1,8 @@
 (add-to-list 'load-path "~/.emacs.d")
 (add-to-list 'load-path "~/.emacs.d/s.el")
+(add-to-list 'load-path "~/.emacs.d/f.el")
+(add-to-list 'load-path "~/.emacs.d/emacs-deferred")
+(add-to-list 'load-path "~/.emacs.d/dash.el")
 
 (require 'package)
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")

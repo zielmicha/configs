@@ -26,6 +26,15 @@
 (add-to-list 'load-path "~/.emacs.d/auto-complete/lib/fuzzy")
 (add-to-list 'load-path "~/.emacs.d/auto-complete")
 
+(add-to-list 'load-path "~/.emacs.d/company-mode")
+(add-hook 'after-init-hook 'global-company-mode)
+
+(add-to-list 'load-path "~/.emacs.d/flycheck")
+(require 'let-alist)
+(require 'flycheck)
+(add-hook 'after-init-hook 'global-flycheck-mode)
+(setq flycheck-highlighting-mode 'lines)
+
 ;(require 'pager)
 ;(global-set-key [next]     'pager-page-down)
 ;(global-set-key [prior]    'pager-page-up)

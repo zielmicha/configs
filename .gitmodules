@@ -79,3 +79,18 @@
 [submodule "_.emacs.d/dash.el"]
 	path = _.emacs.d/dash.el
 	url = https://github.com/magnars/dash.el
+[submodule "_.emacs.d/emacs-ycmd"]
+	path = _.emacs.d/emacs-ycmd
+	url = https://github.com/abingham/emacs-ycmd/
+[submodule "_.emacs.d/emacs-deferred"]
+	path = _.emacs.d/emacs-deferred
+	url = https://github.com/kiwanami/emacs-deferred
+[submodule "_.emacs.d/f.el"]
+	path = _.emacs.d/f.el
+	url = https://github.com/rejeep/f.el
+[submodule "_.emacs.d/ycmd"]
+	path = _.emacs.d/ycmd
+	url = https://github.com/Valloric/ycmd
+[submodule "_.emacs.d/flycheck"]
+	path = _.emacs.d/flycheck
+	url = https://github.com/flycheck/flycheck

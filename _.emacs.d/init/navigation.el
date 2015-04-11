@@ -9,7 +9,6 @@
 (require 'flx)
 (require 'flx-ido)
 
-(add-to-list 'load-path "~/.emacs.d/dash.el")
 (add-to-list 'load-path "~/.emacs.d/projectile")
 (require 'projectile)
 (projectile-global-mode)

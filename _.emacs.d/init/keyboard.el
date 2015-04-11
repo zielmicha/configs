@@ -22,3 +22,5 @@
 (global-set-key (kbd "C-c x") 'ace-jump-char-mode)
 (global-set-key (kbd "C-c z") 'ace-jump-line-mode)
 (global-set-key (kbd "C-c l") 'ace-jump-line-mode)
+
+(global-set-key (kbd "C-/") 'company-complete)
