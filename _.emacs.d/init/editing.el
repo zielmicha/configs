@@ -31,6 +31,6 @@
 ;(global-set-key [prior]    'pager-page-up)
 
 
-(add-to-list 'load-path "/home/michal/.emacs.d/nyan-mode")
+(add-to-list 'load-path "~/.emacs.d/nyan-mode")
 (require 'nyan-mode)
 (nyan-mode)

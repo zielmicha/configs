@@ -5,7 +5,6 @@
 (global-set-key "\C-o" 'other-window)
 (global-set-key "\C-b" 'ido-switch-buffer)
 (global-set-key [insert] nil)
-;(global-set-key "\C-d" "\C-a\C- \C-n\M-w\C-y")
 (global-set-key "\C-c\C-d" 'duplicate-line)
 
 (keyboard-translate ?( ?()

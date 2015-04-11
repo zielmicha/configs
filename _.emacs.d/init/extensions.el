@@ -1,17 +1,8 @@
 (setq auto-mode-alist
-      (append '(("\\.pyx$" . cython_mode)
-                ) auto-mode-alist))
-
-(setq auto-mode-alist
-	  (append
+      (append
+       '(("\\.pyx$" . cython_mode))
 	   '(("CMakeLists\\.txt\\'" . cmake-mode))
 	   '(("\\.cmake\\'" . cmake-mode))
-	   auto-mode-alist))
-
-(setq auto-mode-alist
-      (append '(("\\.dart$" . dart-mode)
-                ) auto-mode-alist))
-
-(setq auto-mode-alist
-      (append '(("\\.h$" . c++-mode)
-                ) auto-mode-alist))
+       '(("\\.dart$" . dart-mode))
+       '(("\\.h$" . c++-mode))
+       auto-mode-alist))
