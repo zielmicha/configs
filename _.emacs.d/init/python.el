@@ -9,13 +9,14 @@
 (add-to-list 'load-path "~/.emacs.d/yasnippet")
 (add-to-list 'load-path "~/.emacs.d/pymacs")
 (require 'elpy)
-(setq elpy-default-minor-modes
-      ;(delete
-      ; 'auto-complete-mode
-       (delete 'highlight-indentation-mode
-               (delete
-                'yas-minor-mode
-                elpy-default-minor-modes)))
+
+(setq elpy-modules
+      '(elpy-module-sane-defaults
+        elpy-module-company
+        elpy-module-eldoc
+        elpy-module-flymake
+        elpy-module-pyvenv))
+
 (elpy-use-ipython)
 (setq elpy-rpc-backend "jedi")
 (elpy-enable)
