@@ -7,6 +7,7 @@
 (load "~/.emacs.d/init/extensions")
 (load "~/.emacs.d/init/python")
 (load "~/.emacs.d/init/c")
+(load "~/.emacs.d/init/javascript")
 (load "~/.emacs.d/init/keyboard")
 
 (custom-set-variables

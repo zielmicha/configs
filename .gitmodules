@@ -112,3 +112,9 @@
 [submodule "_.emacs.d/json-reformat"]
 	path = _.emacs.d/json-reformat
 	url = https://github.com/gongo/json-reformat
+[submodule "_.emacs.d/flymake-jslint"]
+	path = _.emacs.d/flymake-jslint
+	url = https://github.com/purcell/flymake-jslint
+[submodule "_.emacs.d/flymake-easy"]
+	path = _.emacs.d/flymake-easy
+	url = https://github.com/purcell/flymake-easy
