@@ -30,6 +30,22 @@
 
 (require 'cmake-mode)
 
+(add-to-list 'load-path "~/.emacs.d/json-reformat")
+(add-to-list 'load-path "~/.emacs.d/json-snatcher")
+(add-to-list 'load-path "~/.emacs.d/json-mode")
+(add-to-list 'load-path "~/.emacs.d/yaxception")
+(add-to-list 'load-path "~/.emacs.d/log4e")
+(add-to-list 'load-path "~/.emacs.d/emacs-tss")
+
+(require 'typescript)
+(add-to-list 'auto-mode-alist '("\\.ts\\'" . typescript-mode))
+
+(require 'tss)
+
+(setq tss-popup-help-key "C-:")
+(setq tss-jump-to-definition-key "C->")
+(setq tss-implement-definition-key "C-c i")
+
 ;(setq load-path (cons (concat "/usr/share/emacs/site-lisp/erlang") load-path))
 ;(setq erlang-root-dir "/usr/lib/erlang")
 ;(setq exec-path (cons "/usr/lib/erlang/bin" exec-path))
