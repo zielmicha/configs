@@ -16,6 +16,6 @@
 (setq tss-implement-definition-key "C-c i")
 
 
-(add-to-list 'load-path "~/.emacs.d/flymake-jslint")
-(require 'flymake-jslint)
-(add-hook 'js-mode-hook 'flymake-jslint-load)
+;(add-to-list 'load-path "~/.emacs.d/flymake-jslint")
+;(require 'flymake-jslint)
+;(add-hook 'js-mode-hook 'flymake-jslint-load)
