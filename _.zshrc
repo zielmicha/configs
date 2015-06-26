@@ -113,6 +113,8 @@ bindkey "^[[1;5D" backward-word
 
 export LD_LIBRARY_PATH=/usr/local/lib
 
+source ~/.zsh/zbell.sh
+
 [[ -e /etc/zsh_command_not_found ]] && source /etc/zsh_command_not_found
 [[ -e /usr/share/virtualenvwrapper/virtualenvwrapper_lazy.sh ]] \
    && source /usr/share/virtualenvwrapper/virtualenvwrapper_lazy.sh
@@ -195,3 +197,12 @@ with open(p + 'brightness', 'w') as f:
      f.write(str(int(v * v1 / 100)))
 EOF
 }
+
+retryssh() {
+     while true; do
+         ssh "$@"
+         sleep 1 || break
+     done
+}
+
+export DART_FLAGS='--checked'
