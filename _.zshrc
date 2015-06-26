@@ -19,6 +19,8 @@ fg[purple]=$'\e[0;35m'
 #git_super_status() {}
 
 . ~/.zsh/git-prompt/zshrc.sh
+setopt PROMPT_SUBST
+#export RPROMPT='$(git_super_status)'
 export PROMPT='%{$fg[green]%}michal%{$reset_color%} %{$fg[purple]%}%~%{$reset_color%}$(git_super_status)] '
 
 #export PROMPT="%{$fg[red]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg[yellow]%}%~ %{$reset_color%}%% "
@@ -56,7 +58,7 @@ export PROMPT_COMMAND="history -a; history -n"
 export SDL_VIDEO_X11_DGAMOUSE=0
 export SSH_ASKPASS=ssh-askpass
 
-alias apt="sudo apt-get install"
+alias apt="sudo apt install"
 alias apt-search="apt-cache search"
 alias ..="cd .."
 alias ls="ls --color"
@@ -89,7 +91,7 @@ _mopen() {
 }
 alias open=_mopen
 
-export PATH="$HOME/.cabal/bin:$HOME/bin:$PATH:/usr/local/cuda-5.5/bin/"
+export PATH="$HOME/.cabal/bin:$HOME/bin:$PATH:/usr/local/cuda-5.5/bin/:$HOME/apps/nim/bin"
 export COLOBOT_EDITOR="emacs"
 
 export USE_CCACHE=1
