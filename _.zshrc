@@ -128,9 +128,9 @@ export SDL_VIDEO_X11_DGAMOUSE=0
 
 precmd () {print -Pn "\e]0;%n@%m: %~\a"}
 
-alias ncr='nimrod c -r --verbosity:0'
+alias ncr='nim c -r --verbosity:0'
 
-export PATH="$PATH:$HOME/.babel/bin"
+export PATH="$PATH:$HOME/.nimble/bin"
 
 
 x-copy-region-as-kill () {

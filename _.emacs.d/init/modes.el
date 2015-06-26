@@ -2,7 +2,8 @@
 (require 'markdown-mode)
 
 (add-to-list 'load-path "~/.emacs.d/nimrod-mode")
-(require 'nimrod-mode)
+(require 'nim-mode)
+(require 'ac-nim)
 
 (require 'protobuf-mode)
 
