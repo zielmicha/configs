@@ -118,3 +118,9 @@
 [submodule "_.emacs.d/flymake-easy"]
 	path = _.emacs.d/flymake-easy
 	url = https://github.com/purcell/flymake-easy
+[submodule "_.emacs.d/emacs-epc"]
+	path = _.emacs.d/emacs-epc
+	url = https://github.com/kiwanami/emacs-epc
+[submodule "_.emacs.d/emacs-ctable"]
+	path = _.emacs.d/emacs-ctable
+	url = https://github.com/kiwanami/emacs-ctable

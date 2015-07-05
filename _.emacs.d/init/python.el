@@ -18,7 +18,6 @@
 (elpy-use-ipython)
 (setq elpy-rpc-backend "jedi")
 (elpy-enable)
-(ac-set-trigger-key "RET")
 
 (setq flycheck-flake8rc "/home/michal/.emacs.d/flake8rc.conf")
 
