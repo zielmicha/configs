@@ -1,6 +1,5 @@
 
 (setq show-trailing-whitespace t)
-(add-hook 'before-save-hook 'delete-trailing-whitespace)
 (show-paren-mode 1)
 (setq require-final-newline 't)
 (setq-default indicate-empty-lines t)
@@ -43,3 +42,8 @@
 (add-to-list 'load-path "~/.emacs.d/nyan-mode")
 (require 'nyan-mode)
 (nyan-mode)
+
+;(add-hook 'before-save-hook 'delete-trailing-whitespace)
+(add-to-list 'load-path "~/.emacs.d/ws-butler")
+(require 'ws-butler)
+(ws-butler-global-mode)

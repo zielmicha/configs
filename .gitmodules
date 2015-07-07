@@ -124,3 +124,6 @@
 [submodule "_.emacs.d/emacs-ctable"]
 	path = _.emacs.d/emacs-ctable
 	url = https://github.com/kiwanami/emacs-ctable
+[submodule "_.emacs.d/ws-butler"]
+	path = _.emacs.d/ws-butler
+	url = https://github.com/lewang/ws-butler
