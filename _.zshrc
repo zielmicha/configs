@@ -206,3 +206,6 @@ retryssh() {
 }
 
 export DART_FLAGS='--checked'
+
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
+source ~/configs/_.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
