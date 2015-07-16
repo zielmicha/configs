@@ -127,3 +127,6 @@
 [submodule "_.emacs.d/ws-butler"]
 	path = _.emacs.d/ws-butler
 	url = https://github.com/lewang/ws-butler
+[submodule "_.zsh/zsh-syntax-highlighting"]
+	path = _.zsh/zsh-syntax-highlighting
+	url = git://github.com/zsh-users/zsh-syntax-highlighting.git
