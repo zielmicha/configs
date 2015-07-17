@@ -122,7 +122,7 @@ bindkey "^[[1;5D" backward-word
 
 export LD_LIBRARY_PATH=/usr/local/lib
 
-source ~/.zsh/zbell.sh
+#source ~/.zsh/zbell.sh
 
 [[ -e /etc/zsh_command_not_found ]] && source /etc/zsh_command_not_found
 [[ -e /usr/share/virtualenvwrapper/virtualenvwrapper_lazy.sh ]] \
