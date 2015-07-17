@@ -21,7 +21,16 @@ fg[purple]=$'\e[0;35m'
 . ~/.zsh/git-prompt/zshrc.sh
 setopt PROMPT_SUBST
 #export RPROMPT='$(git_super_status)'
-export PROMPT='%{$fg[green]%}michal%{$reset_color%} %{$fg[purple]%}%~%{$reset_color%}$(git_super_status)] '
+if [[ $UID = 0 ]]; then
+   export PROMPT="%{$fg[red]%}%m%{$reset_color%} %{$fg[purple]%}%~%{$reset_color%}] "
+else
+   _hostname=$(</etc/hostname)
+   if [[ $_hostname =~ '\.' ]]; then
+      export PROMPT='%{$fg[cyan]%}%n@%m%{$reset_color%} %{$fg[purple]%}%~%{$reset_color%}$(git_super_status)] '
+   else
+      export PROMPT='%{$fg[green]%}%n%{$reset_color%} %{$fg[purple]%}%~%{$reset_color%}$(git_super_status)] '
+   fi
+fi
 
 #export PROMPT="%{$fg[red]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg[yellow]%}%~ %{$reset_color%}%% "
 #export PS1='[%T] %n@%m:%~# '
@@ -206,3 +215,6 @@ retryssh() {
 }
 
 export DART_FLAGS='--checked'
+
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
+source ~/configs/_.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
