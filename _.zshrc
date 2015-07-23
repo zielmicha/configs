@@ -100,15 +100,18 @@ _mopen() {
 }
 alias open=_mopen
 
-export PATH="$HOME/.cabal/bin:$HOME/bin:$PATH:/usr/local/cuda-5.5/bin/:$HOME/apps/nim/bin"
-export COLOBOT_EDITOR="emacs"
+# base
+export PATH="$PATH:$HOME/bin:/usr/sbin:/sbin"
+# Nim
+export PATH="$PATH:$HOME/.nimble/bin:$PATH:$HOME/apps/nim/bin"
+# Android
+export PATH="$PATH:$HOME/apps/android-sdk-linux/tools:$HOME/apps/android-sdk-linux/platform-tools:$HOME/apps/android-ndk-r9"
+# depot_tools
+export PATH="$PATH:$HOME/apps/depot_tools"
+# robocore
+export PATH="$PATH:$HOME/husarion/robocore-current/tools/amd64-linux"
 
 export USE_CCACHE=1
-
-upd() {
-	pyflakes *.py
-	graveldev updaterepo --dev
-}
 
 autoload -U select-word-style
 select-word-style bash
@@ -129,7 +132,6 @@ export LD_LIBRARY_PATH=/usr/local/lib
    && source /usr/share/virtualenvwrapper/virtualenvwrapper_lazy.sh
 
 
-export PATH="$PATH:$HOME/bin:/home/michal/apps/android-sdk-linux/tools:/home/michal/apps/android-sdk-linux/platform-tools:/home/michal/apps/android-ndk-r9:/usr/sbin:/sbin:/home/michal/oi/emscripten:/home/michal/oi/mxe/usr/bin/:$HOME/.babel/bin"
 alias vi=vim
 alias nano="emacs -nw -q -l ~/.emacs.d/nano.el"
 
@@ -141,7 +143,6 @@ precmd () {print -Pn "\e]0;%n@%m: %~\a"}
 
 alias ncr='nim c -r --verbosity:0'
 
-export PATH="$PATH:$HOME/.nimble/bin"
 
 
 x-copy-region-as-kill () {
@@ -166,9 +167,6 @@ bindkey -e '^Y' x-yank
 #export ARDUINO_DIR=/home/sudar/apps/arduino-1.0.5
 export ARDMK_DIR=/home/michal/apps/Arduino-Makefile
 export AVR_TOOLS_DIR=/usr
-export PATH="$PATH:$HOME/apps/arm-eabi-4.6/bin"
-export PATH="$PATH:$HOME/apps/depot_tools"
-export PATH="$PATH:$HOME/apps/dart-sdk/bin"
 
 case $TERM in
     xterm*)
