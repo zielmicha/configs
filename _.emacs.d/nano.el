@@ -9,8 +9,6 @@
 (setq-default tab-width 4)
 (delete-selection-mode 1)
 (menu-bar-mode 0)
-(scroll-bar-mode 0)
-(tool-bar-mode 0)
 (setq show-trailing-whitespace t)
 (fset 'yes-or-no-p 'y-or-n-p)
 
