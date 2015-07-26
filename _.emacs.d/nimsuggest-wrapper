@@ -1,0 +1,2 @@
+#!/bin/bash
+~/.nimble/bin/nimsuggest '--hint[Conf]=off' '--hint[Path]=off' "$@"
