@@ -15,8 +15,10 @@
 
 
 (setq comint-prompt-read-only t)
-(menu-bar-mode 0)
-(scroll-bar-mode 0)
+(if (fboundp 'menu-bar-mode)
+    (menu-bar-mode 0))
+(if (fboundp 'scroll-bar-mode)
+  (scroll-bar-mode 0))
 (tool-bar-mode 0)
 (fset 'yes-or-no-p 'y-or-n-p)
 
