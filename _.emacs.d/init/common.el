@@ -19,7 +19,8 @@
     (menu-bar-mode 0))
 (if (fboundp 'scroll-bar-mode)
   (scroll-bar-mode 0))
-(tool-bar-mode 0)
+(if (fboundp 'tool-bar-mode)
+    (tool-bar-mode 0))
 (fset 'yes-or-no-p 'y-or-n-p)
 
 (setq backup-directory-alist `(("." . "~/.saves")))
