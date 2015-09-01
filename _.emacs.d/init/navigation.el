@@ -14,6 +14,7 @@
 (projectile-global-mode)
 (global-set-key (kbd "C-x p") 'projectile-find-file)
 (setq projectile-enable-caching t)
+(setq projectile-mode-line " Projectile")
 
 (add-to-list 'load-path "~/.emacs.d/helm")
 (require 'helm-config)

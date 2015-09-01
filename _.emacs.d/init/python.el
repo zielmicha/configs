@@ -22,3 +22,13 @@
 (setq flycheck-flake8rc "/home/michal/.emacs.d/flake8rc.conf")
 
 (setq flycheck-disabled-checkers '(emacs-lisp-checkdoc emacs-lisp))
+
+(flycheck-define-checker python-mypy
+  "Mypy checker"
+  :command ("/home/michal/.emacs.d/mypy-wrapper.py"
+            source-inplace)
+  :error-patterns
+  ((error line-start (file-name) ", line " line ":" (message) line-end))
+  :modes python-mode)
+
+(add-to-list 'flycheck-checkers 'python-mypy)

@@ -24,22 +24,23 @@
 
 (add-to-list 'load-path "~/.emacs.d/emacs-ycmd")
 (require 'ycmd)
-(ycmd-setup)
-(set-variable 'ycmd-server-command '("python" "/home/michal/.emacs.d/ycmd/ycmd"))
+;(ycmd-setup)
+;(set-variable 'ycmd-server-command '("python" "/home/michal/.emacs.d/ycmd/ycmd"))
 
-(require 'company-ycmd)
-(company-ycmd-setup)
+;(require 'company-ycmd)
+;(company-ycmd-setup)
 
-(require 'flycheck-ycmd)
-(flycheck-ycmd-setup)
+;(require 'flycheck-ycmd)
+;(flycheck-ycmd-setup)
 
 (add-hook 'c++-mode-hook (lambda () (flycheck-mode)))
 
-(add-hook 'python-mode-hook (lambda () (add-to-list 'flycheck-disabled-checkers 'ycmd)))
+(add-hook 'python-mode-hook (lambda ()
+                              (add-to-list 'flycheck-disabled-checkers 'ycmd)))
 
 (set-variable 'ycmd-extra-conf-whitelist '("~/husarion/robocore-*"
                                            "~/multilink"))
 
 (setq ycmd-goto-lambda (lambda () (local-set-key (kbd "M-.") 'ycmd-goto)))
-(add-hook 'c++-mode-hook ycmd-goto-lambda)
-(add-hook 'c-mode-hook ycmd-goto-lambda)
+;(add-hook 'c++-mode-hook ycmd-goto-lambda)
+;(add-hook 'c-mode-hook ycmd-goto-lambda)
