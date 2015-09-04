@@ -5,4 +5,4 @@
 (add-to-list 'company-backends 'company-nim)
 (add-hook 'nim-mode-hook 'company-mode)
 
-(setq nim-nimsuggest-path "~/.nimble/bin/nimsuggest")
+(setq nim-nimsuggest-path "~/.emacs.d/nimsuggest-wrapper")
