@@ -15,11 +15,13 @@ rel_path = None
 for root, mypy_path in project_roots:
     root_abs = os.path.realpath(os.path.expanduser(root))
     if filename.startswith(root_abs):
-        mypy_stub_abs = os.path.realpath(mypy_path)
+        mypy_stub_abs = os.path.realpath(os.path.expanduser(mypy_path))
         if filename.startswith(mypy_stub_abs):
-            continue
-        choosen_root = root_abs
-        rel_path = filename[len(root_abs):]
+            choosen_root = mypy_stub_abs
+            rel_path = filename[len(mypy_stub_abs):]
+        else:
+            choosen_root = root_abs
+            rel_path = filename[len(root_abs):]
         break
 
 if not choosen_root:
