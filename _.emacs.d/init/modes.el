@@ -12,7 +12,6 @@
 
 (add-to-list 'load-path "~/.emacs.d/nginx-mode")
 (require 'nginx-mode)
-(add-to-list 'auto-mode-alist '("/etc/nginx/" . nginx-mode))
 
 (add-to-list 'load-path "~/.emacs.d/emacs-gradle-mode")
 (require 'gradle-mode)
@@ -25,6 +24,9 @@
 
 (add-to-list 'load-path "~/.emacs.d/dart-mode")
 (require 'dart-mode)
+
+(add-to-list 'load-path "~/.emacs.d/lua-mode")
+(require 'lua-mode)
 
 (require 'cmake-mode)
 

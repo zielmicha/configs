@@ -7,7 +7,6 @@
 (add-to-list 'load-path "~/.emacs.d/emacs-tss")
 
 (require 'typescript)
-(add-to-list 'auto-mode-alist '("\\.ts\\'" . typescript-mode))
 
 (require 'tss)
 

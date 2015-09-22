@@ -7,6 +7,9 @@
 (setq-default tab-width 4)
 (delete-selection-mode 1)
 
+(setq dabbrev-upcase-means-case-search 't)
+(setq dabbrev-case-fold-search nil)
+(setq ac-ignore-case nil)
 
 (add-to-list 'load-path "~/.emacs.d/ace-jump-mode")
 (require 'ace-jump-mode)
