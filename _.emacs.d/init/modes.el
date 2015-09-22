@@ -30,6 +30,8 @@
 
 (require 'cmake-mode)
 
+(add-to-list 'auto-mode-alist '("\\.mm\\'" . objc-mode))
+
 ;(setq load-path (cons (concat "/usr/share/emacs/site-lisp/erlang") load-path))
 ;(setq erlang-root-dir "/usr/lib/erlang")
 ;(setq exec-path (cons "/usr/lib/erlang/bin" exec-path))
